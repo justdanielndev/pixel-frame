@@ -89,3 +89,20 @@ Both yesterday and today I began uploading all of the docs and pictures to GitHu
 In addition, I've been working on a rough BOM for the project! Maybe in the future some things change, but [this is how it's looking right now](https://github.com/justdanielndev/pixel-frame/blob/main/bom.csv). And with that today's work should be done (I had exams and couldn't do too much sadly).
 
 **Total time spent: 1h**
+
+# 5th of June - Final BOM, software touches and pondering about case
+
+Today I continued working on the software. I fixed quite an important bug that made ebooks completely unreadable :3 and finished developing the integration with the Pi's screen. Essentially it uses Puppeteer to listen to browser console.log events, and every time the website updates I make it console.log a message informing of this update. So, every time the website updates it sends the event, pupetter sees it, takes a screenshot and sends it over to the E-Ink display. For sending the content to the E-Ink display and updating JSON files with all sensor data, I (sadly) had to use Python :D (you can guess how much I like it). In addition, I did a fun workaround to work with the rotary encoder, and it basically sends every interaction with it as a key press to the website, so I didn't have to code an extremely long and useless workaround that breaks browser sandboxing to be able to access those inputs (thankfully). And with this, all of the software side seems to be fully working! I'll just have to see when the parts arrive and I build the actual thing if the device works as it should or not.
+
+Now, case time! I was thinking about doing something with an Ikea picture frame, but I eventually decided that it wouldn't really fit, and decided to design my own case for it. I was thinking about how to make a stand that could fold closed, and remembered those kind of stands ![image](https://github.com/user-attachments/assets/8be6706e-634f-437a-93dc-988fa29bc7bb)
+. I remembered they were easy to use and quite cheap to build, so I said "why not"? And got to designing. After some time, I ended up with these designs ![render](https://github.com/justdanielndev/pixel-frame/blob/main/basic-render.png?raw=true)
+
+I think they are quite nice and would fit the aesthetic of my room, so I'm proud of them! (the stand took longer than it probably should have 😭). And with that, the case could essentially be marked as done!
+
+Finally, I edited the original BOM with the actual, non-discounted prices on AliExpress (they had free Choice shipping, yay!)... Thank god they didn't go over the 150$ max, as I couldn't find anything cheaper that didn't drastically reduce the quality of the project to a point when it was useless. I did remove the PCB that I said I was going to use in the last version of the BOM because I found that to simply use up more space and ended up being a waste of resources, as each item is in a completely different position and the PCB would have to be too long. Instead, I'll simply connect them with cables to the Pi's HAT.
+
+With this finished, I think it's time to actually go ahead and ship the project! I'll start doing that today, and probably finish tomorrow.
+
+Overall, quite happy with how everything turned up, and glad I was able to fulfil my childhood dream!
+
+**Total time spent: 4h**

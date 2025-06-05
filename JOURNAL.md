@@ -5,6 +5,8 @@ description: "An all-in-one everyday E-Ink life dashboard integrating calendar, 
 created_at: "2025-05-26"
 ---
 
+**Total hours spent as of 5th of June: 19h**
+
 # 27th of May - Project Beginning
 
 Today I started off the project by designing its general structure, basic features and a bit on how the style should look like. I've always wanted to design a project like this, a very unique use for E-Ink technologies that I've seen little to no people do at this scale.

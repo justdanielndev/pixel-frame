@@ -5,7 +5,7 @@ description: "An all-in-one everyday E-Ink life dashboard integrating calendar, 
 created_at: "2025-05-26"
 ---
 
-**Total hours spent as of 5th of June: 19h**
+**Total hours spent as of 5th of June: 23.5h**
 
 # 27th of May - Project Beginning
 
@@ -97,7 +97,10 @@ In addition, I've been working on a rough BOM for the project! Maybe in the futu
 Today I continued working on the software. I fixed quite an important bug that made ebooks completely unreadable :3 and finished developing the integration with the Pi's screen. Essentially it uses Puppeteer to listen to browser console.log events, and every time the website updates I make it console.log a message informing of this update. So, every time the website updates it sends the event, pupetter sees it, takes a screenshot and sends it over to the E-Ink display. For sending the content to the E-Ink display and updating JSON files with all sensor data, I (sadly) had to use Python :D (you can guess how much I like it). In addition, I did a fun workaround to work with the rotary encoder, and it basically sends every interaction with it as a key press to the website, so I didn't have to code an extremely long and useless workaround that breaks browser sandboxing to be able to access those inputs (thankfully). And with this, all of the software side seems to be fully working! I'll just have to see when the parts arrive and I build the actual thing if the device works as it should or not.
 
 Now, case time! I was thinking about doing something with an Ikea picture frame, but I eventually decided that it wouldn't really fit, and decided to design my own case for it. I was thinking about how to make a stand that could fold closed, and remembered those kind of stands ![image](https://github.com/user-attachments/assets/8be6706e-634f-437a-93dc-988fa29bc7bb)
-. I remembered they were easy to use and quite cheap to build, so I said "why not"? And got to designing. After some time, I ended up with these designs ![render](https://github.com/justdanielndev/pixel-frame/blob/main/basic-render.png?raw=true)
+
+. I remembered they were easy to use and quite cheap to build, so I said "why not"? And got to designing. After some time, I ended up with these designs 
+
+![render](https://github.com/justdanielndev/pixel-frame/blob/main/basic-render.png?raw=true)
 
 I think they are quite nice and would fit the aesthetic of my room, so I'm proud of them! (the stand took longer than it probably should have 😭). And with that, the case could essentially be marked as done!
 
@@ -108,3 +111,31 @@ With this finished, I think it's time to actually go ahead and ship the project!
 Overall, quite happy with how everything turned up, and glad I was able to fulfil my childhood dream!
 
 **Total time spent: 4h**
+
+# 7th of June - UI redo, README
+
+So, about shipping... today I kinda had to redo most of the UI for some of the Pixel Frame's pages (not the dashboard thankfully) because after working on the mobile companion page on the website they looked a bit different than I thought they should have, plus I added some extra features that I had to implement on them as well, so I couldn't finish the shipping part :( The new pages aren't too different though, but here is the new calendar:
+
+![image](https://github.com/user-attachments/assets/7de02f55-88e4-4d9d-8307-23dc3bb3e90d)
+
+here is the new notes:
+
+![image](https://github.com/user-attachments/assets/14a586fc-c8ec-4e6e-9ee8-2056dfbfb1ff)
+
+here is the new books:
+
+![image](https://github.com/user-attachments/assets/260d2011-f56d-4317-9a29-b0e73208a8c5)
+
+and finally here is the new assistant page!
+
+![image](https://github.com/user-attachments/assets/6c72d820-a616-40ba-8c8a-e88778be6e88)
+
+So, these are all the redesigns (honestly some look quite similar to how they were before and I only changed little things, others like the books or assistant page are much more different now)! Now, let me show you the companion page:
+
+![image](https://github.com/user-attachments/assets/f7b6f8fc-be53-48c4-8e8c-511153e6f714)
+
+Nice, right?
+
+After this I finished the README.md file and I supposedly only have to update the CAD files and source code, which I'll do tomorrow as it's now too late. I spent wayyy too much time on this today...
+
+**Total time spent: 4.5h**

@@ -53,7 +53,7 @@ Hardware Layer (E-ink display + sensors + GPIO)
 - **Home Dashboard** - Weather, At a glance, quick actions
 - **E-Reader** - Self explanatory :D
 - **Calendar View** - Monthly calendar with daily events
-- **Notes Interface** - Note reader (can be created with phone using QR)
+- **Notes Interface** - Note reader (can be created with phone using companion app)
 - **AI Assistant** - Chatbot with same context as At a glance
 
 ### At a Glance

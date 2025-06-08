@@ -19,16 +19,16 @@ On the **Books page**, you can do the following:
 
 1. Click on a book to start reading it (or continue where you left off)
 2. Press and hold to go back to dashboard
-3. With a book opened, click once to open the menu (toggle dark mode on/off, exit book or return to reading)
 
 On the **Notes page**, you can do the following:
 
-1. Click on a note to show its context menu (read, edit in phone with a QR code or delete)
-2. Press and hold to go back (to the Notes page if a note is opened or to the dashboard if on the main Notes page)
+1. Edit notes on companion app
+2. Click on a note to delete it
+3. Press and hold to go back (to the Notes page if a note is opened or to the dashboard if on the main Notes page)
 
 On the **Calendar page**, you can scroll through the days to see your events.
 
-Finally, on the **Weather page**, you can see the weather for the next days rotating the knob.
+Finally, on the **Weather page**, you can see the weather for today and tomorrow.
 
 ### Customization
 
